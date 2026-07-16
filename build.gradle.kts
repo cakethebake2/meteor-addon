@@ -30,7 +30,7 @@ dependencies {
 
     // Mixin annotations (Mixin, @Accessor, etc) - needed explicitly, not
     // reliably provided transitively in this setup
-    compileOnly("org.spongepowered:mixin:0.8.5")
+    compileOnly("net.fabricmc:sponge-mixin:0.15.2+mixin.0.8.7")
 }
 
 java {
