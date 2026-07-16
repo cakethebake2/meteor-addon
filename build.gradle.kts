@@ -27,6 +27,10 @@ dependencies {
 
     // Meteor
     implementation(libs.meteor.client)
+
+    // Mixin annotations (Mixin, @Accessor, etc) - needed explicitly, not
+    // reliably provided transitively in this setup
+    compileOnly("org.spongepowered:mixin:0.8.5")
 }
 
 java {
