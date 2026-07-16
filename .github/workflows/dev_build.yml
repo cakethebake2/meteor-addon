@@ -1,5 +1,10 @@
 name: Publish Development Build
+
 on: push
+
+permissions:
+  contents: write  # Required to create releases
+  packages: write  # If publishing packages
 
 jobs:
   build:
