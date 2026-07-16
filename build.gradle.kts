@@ -26,7 +26,7 @@ dependencies {
     implementation(libs.fabric.loader)
 
     // Meteor
-    implementation(libs.meteor.client)
+   modImplementation(libs.meteor.client)
 
     // Mixin annotations (Mixin, @Accessor, etc) - needed explicitly, not
     // reliably provided transitively in this setup
