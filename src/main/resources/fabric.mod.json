@@ -1,32 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "spawner-utils",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
-  "authors": [
-    "seasnail"
-  ],
+  "name": "SpawnerUtils",
+  "description": "Adds spawner ESP, ore ESP, player ESP and a NoClip module to Meteor Client.",
+  "authors": ["YourNameHere"],
   "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "sources": "https://github.com/yourname/spawner-utils"
   },
   "icon": "assets/template/icon.png",
   "environment": "client",
   "entrypoints": {
-    "meteor": [
-      "com.example.addon.AddonTemplate"
-    ]
+    "meteor": ["com.example.addon.AddonTemplate"]
   },
-  "mixins": [
-    "addon-template.mixins.json"
-  ],
+  "mixins": ["spawner-utils.mixins.json"],
   "custom": {
-    "meteor-client:color": "225,25,25",
-    "modmenu": {
-      "parent": {
-        "id": "meteor-client"
-      }
-    }
+    "meteor-client:color": "220,20,20"
   },
   "depends": {
     "java": ">=${jdk_version}",
