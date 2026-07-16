@@ -1,7 +1,7 @@
 plugins {
-    alias(libs.plugins.fabric.loom)
+    id("fabric-loom") version "1.9"
+    java
 }
-
 base {
     archivesName = properties["archives_base_name"] as String
     version = libs.versions.mod.version.get()
