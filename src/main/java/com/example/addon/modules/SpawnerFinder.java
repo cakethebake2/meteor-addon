@@ -141,7 +141,7 @@ public class SpawnerFinder extends Module {
                     // inside the spawner cage - reading its type tells us what it'll spawn
                     String mobType = "Unknown";
                     if (showMobType.get()) {
-                        Entity rendered = spawner.getLogic().getRenderedEntity(mc.world);
+                        Entity rendered = spawner.getLogic().getRenderedEntity(mc.world, immutable);
                         if (rendered != null) mobType = rendered.getType().getName().getString();
                     }
 
